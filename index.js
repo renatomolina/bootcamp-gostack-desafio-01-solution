@@ -3,7 +3,7 @@ const express = require('express');
 const server = express();
 server.use(express.json());
 
-let projects = [];
+const projects = [];
 let numberOfRequests = 0;
 
 
