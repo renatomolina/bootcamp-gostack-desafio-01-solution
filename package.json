@@ -10,6 +10,6 @@
     "nodemon": "^1.19.3"
   },
   "scripts" : {
-    "dev": "nodemon index.js"
+    "dev": "nodemon solution.js"
   }
 }
