@@ -6,7 +6,6 @@ server.use(express.json());
 const projects = [];
 let numberOfRequests = 0;
 
-
 // Middlewares
 function countRequests(request, response, next) {
   numberOfRequests++;
@@ -50,7 +49,6 @@ server.put('/projects/:id', countRequests, checkProjectExists, (request, respons
 });
 
 // Tasks
-
 server.post('/projects/:id/tasks', countRequests, checkProjectExists, (request, response) => {
   const { id } = request.params;
   const { tasks } = request.body;
